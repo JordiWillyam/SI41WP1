@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link dan table</title>
+
+    <!-- Semua teks H1 akan menggunakan settingan CSS dibawah ini dengan cara dibawah -->
+    <style>
+        h1 {
+            background-color: black;
+            color: white;
+        }
+
+        table,th,td{
+        border-collapse: collapse;
+        border: 1px solid black;}
+        
+        table{width: 50%;}
+
+        td{
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Praktikum Hyperlink</h1>
+<!-- cara membuat hyperlink dengan perintah <a href="link yang dituju">Kata kata yang ingin ditampilkan dan menjadi hyperlink</a> -->
+    <a href="https://www.detik.com/"> Portal Berita Detik</a>
+<!-- untuk membuat agar link yang dibuka akan terbuka di page baru menggunakan target="_blank" -->
+    <br> <a href="https://www.kompas.com/" target="_blank">Portal Kompas</a>
+
+    <br> <a href="belajarImage.html">Praktikum Image</a>
+
+<!-- Format ke 1-->
+    <h1>Praktikum table Pertama</h1>
+    <table>
+    <!-- Tabel baris pertama -->
+        <tr>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Pekerjaan</th>
+            <th>Kota</th>
+        </tr>
+    <!-- tabel baris kedua -->
+        <tr>
+            <td>Budi</td>
+            <td>JL. Kalimanatan Timur</td>
+            <td>Wirasuasta</td>
+            <td>Kalimantan</td>
+        </tr>
+<!-- tabel baris ke 3 -->
+        <tr>
+            <td>Jordi</td>
+            <td>JL. Bambang Utoyo</td>
+            <td>Wiraswasta</td>
+            <td>Palembang</td>
+        </tr>
+    </table>
+
+<!-- Format ke 2 -->
+    <h1>Praktikum tabel kedua</h1>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th colspan="2">Alamat</th>
+                <th>Kota</th>
+            </tr>
+            <tr>
+                <td>Budi</td>
+                <td>Rumah : Jl. Kalimantan Timur</td>
+                <td>Pekerjaan : Wiraswasta</td>
+                <td>Palembang</td>
+            </tr>
+        </table>
+
+<!-- Format ke 3 -->
+<h1>Praktikum tabel ketiga</h1>
+        <table>
+            <tr>
+                <th>Nama Lengkap</th>
+                <td>Budi </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Alamat</th>
+                <td>Rumah : Jl. Kalimantan Timur</td>
+            </tr>
+            <tr>
+                <td>Kota : Palembang</td>
+            </tr>
+        </table>
+</body>
+</html>
