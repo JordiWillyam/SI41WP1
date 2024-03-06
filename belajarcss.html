@@ -6,6 +6,7 @@
     <title>Link dan table</title>
 
     <!-- Semua teks H1 akan menggunakan settingan CSS dibawah ini dengan cara dibawah -->
+    <!-- ini merupakan internal CSS -->
     <style>
         h1 {
             background-color: black;
@@ -21,17 +22,28 @@
         td{
             text-align: center;
         }
-    </style>
 
+        .heading1 {
+            color: aliceblue;
+            background: blue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #heading2{
+            background-color: red;
+            color: blue;
+        }
+
+    </style>
 
 </head>
 <body>
+
     <h1>Praktikum Hyperlink</h1>
 <!-- cara membuat hyperlink dengan perintah <a href="link yang dituju">Kata kata yang ingin ditampilkan dan menjadi hyperlink</a> -->
     <a href="https://www.detik.com/"> Portal Berita Detik</a>
+
 <!-- untuk membuat agar link yang dibuka akan terbuka di page baru menggunakan target="_blank" -->
     <br> <a href="https://www.kompas.com/" target="_blank">Portal Kompas</a>
-
     <br> <a href="belajarImage.html">Praktikum Image</a>
 
 <!-- Format ke 1-->
@@ -61,7 +73,7 @@
     </table>
 
 <!-- Format ke 2 -->
-    <h1>Praktikum tabel kedua</h1>
+    <h1 class = "heading1">Praktikum tabel kedua</h1>
         <table>
             <tr>
                 <th>Nama</th>
@@ -77,7 +89,7 @@
         </table>
 
 <!-- Format ke 3 -->
-<h1>Praktikum tabel ketiga</h1>
+<h1 id = "heading2">Praktikum tabel ketiga</h1>
         <table>
             <tr>
                 <th>Nama Lengkap</th>
@@ -92,5 +104,6 @@
                 <td>Kota : Palembang</td>
             </tr>
         </table>
+
 </body>
 </html>
