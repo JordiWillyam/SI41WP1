@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script type="text/javascript">
+
+        function pesan1(){
+            alert("Hallo Dunia");
+        }
+
+        function pesan2(nama){
+            alert("Hallo "+nama);
+        }
+
+        function tampilPesan(){
+            return "Sistem Informasi UMDP";
+        }
+
+        function validasiUmur(){
+            let umur = parseInt(document.getElementById("umur").value);
+            document.getElementById("info").innerHTML=umur;
+            if (umur >= 17){
+                document.getElementById("info").innerHTML="Layak Untuk Membuat KTP";
+            }else if(umur < 0){
+                document.getElementById("info").innerHTML="Umur Tidak Valid";
+            }else{
+                document.getElementById("info").innerHTML="Belum Layak Untuk Membuat KTP";
+            } 
+        }
+    </script>
+
+</head>
+<body>
+    <h1 id="prodi">Program Studi : Sistem Informasi</h1>
+
+    <script type="text/javascript">
+        document.write("<h1>Belajar Javascript</h1>");
+        let varA = " Budi Rahajo";
+        document.write("Nama Penulis :" + varA);
+        console.log("varA"+ varA)
+
+        document.getElementById('prodi').innerHTML = "Universitas MDP" ;
+        document.getElementById("prodi").style.fontSize = "100px" ;
+        document.write("<br>Metode tampilPesan () = " + tampilPesan())
+    </script>
+    <br>
+    <button onclick="pesan1()">Tampil pesan 1</button>
+    <button onclick="pesan2('Jordi Willyam')">Tampil pesan 2</button>
+    <br>
+    Umur : <input type="text" id="umur">
+    <button onclick="validasiUmur()" type="submit">Submit</button>
+    <p id="info">Cek Validasi</p>
+
+</body>
+</html>
